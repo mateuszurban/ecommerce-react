@@ -2,11 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./global.css";
-import {
-  createBrowserRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./views/ErrorPage.jsx";
 import { ProductDetails } from "./views/ProductDetails.jsx";
 import { CategoryProducts } from "./views/CategoryProducts.jsx";
@@ -39,6 +35,7 @@ const router = createBrowserRouter([
       { path: "/faq", element: <FAQView /> },
       { path: "/checkout", element: <Checkout /> },
       { path: "/confirmation", element: <Confirmation /> },
+      { path: "/ecommerce-react", element: <MainPage /> },
     ],
   },
 ]);
