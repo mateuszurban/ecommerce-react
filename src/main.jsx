@@ -20,25 +20,25 @@ import { Confirmation } from "./views/Confirmation.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/ecommerce-react",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/ecommerce-react", element: <MainPage /> },
-      { path: "/ecommerce-react/cart", element: <Cart /> },
+      { path: "/", element: <MainPage /> },
+      { path: "/cart", element: <Cart /> },
       {
-        path: "/ecommerce-react/product/:productId",
+        path: "/product/:productId",
         element: <ProductDetails />,
       },
       {
-        path: "/ecommerce-react/category/:categoryId",
+        path: "/category/:categoryId",
         element: <CategoryProducts />,
       },
-      { path: "/ecommerce-react/sustainability", element: <Sustainability /> },
-      { path: "/ecommerce-react/contact", element: <Contact /> },
-      { path: "/ecommerce-react/faq", element: <FAQView /> },
-      { path: "/ecommerce-react/checkout", element: <Checkout /> },
-      { path: "/ecommerce-react/confirmation", element: <Confirmation /> },
+      { path: "/sustainability", element: <Sustainability /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/faq", element: <FAQView /> },
+      { path: "/checkout", element: <Checkout /> },
+      { path: "/confirmation", element: <Confirmation /> },
     ],
   },
 ]);
