@@ -1,3 +1,4 @@
+import { Link, redirect } from "react-router-dom";
 import { Button } from "../components/Button";
 
 export function Confirmation() {
@@ -16,7 +17,9 @@ export function Confirmation() {
         Check your email for status tracking, delivery options and additional
         information. Our support is here for you, if you have any questions.
       </p>
-      <Button buttonText={"Go back"} colourTheme={"main"} />
+      <Link to="/">
+        <Button buttonText={"Go back"} colourTheme={"main"} />
+      </Link>
     </div>
   );
 }
