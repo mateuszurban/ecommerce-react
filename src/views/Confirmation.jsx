@@ -1,4 +1,4 @@
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 
 export function Confirmation() {

@@ -7,7 +7,6 @@ export function Cart() {
   const allProducts = PRODUCTS;
 
   const [cartItems, setCartItems] = useState([]);
-  // const [cartItems, setCartItems] = useState("");
 
   useEffect(() => {
     let localStorageCartItems;
@@ -21,9 +20,15 @@ export function Cart() {
     cartItems.includes(product.id)
   );
 
+  function removeFromCart(id) {
+    setCartItems((prevTasks) =>
+      prevTasks.filter((cartItem) => cartItem !== id)
+    );
+  }
+
   return (
     <>
-      <CartItems products={cartProducts} />
+      <CartItems products={cartProducts} removeFromCart={removeFromCart} />
       <CartSummary products={cartProducts} />
       <hr />
     </>

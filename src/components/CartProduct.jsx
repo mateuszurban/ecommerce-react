@@ -2,16 +2,7 @@ import { Button } from "./Button";
 import styles from "./CartProduct.module.css";
 import { Link } from "react-router-dom";
 
-export function CartProduct({ product }) {
-  function removeFromCart(id) {
-    let cartItems = JSON.parse(localStorage.getItem("cart"));
-    let newCartItemsArray = cartItems.filter((cartItem) => cartItem !== id);
-    localStorage.setItem("cart", JSON.stringify(newCartItemsArray));
-
-    // Temporary solution, as localStorage cart is not the proper way to do it, anyway
-    window.location.reload();
-  }
-
+export function CartProduct({ product, removeFromCart }) {
   return (
     <div className={styles.cartContainer}>
       <img
@@ -32,7 +23,6 @@ export function CartProduct({ product }) {
             colourTheme={"warning"}
             onClick={() => removeFromCart(product.id)}
           />
-          {/* <Button buttonText={"Add to favs"} colourTheme={"positive"} /> */}
         </div>
       </div>
     </div>
