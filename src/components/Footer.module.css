@@ -1,0 +1,47 @@
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--color-theme-main);
+  color: var(--color-white);
+}
+
+.footer * {
+  margin: 1rem 0;
+}
+
+.footer p {
+  text-transform: capitalize;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.year p {
+  text-align: center;
+}
+
+.footerTitle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.footerTitle h4 {
+  margin: 0 auto 0 0;
+}
+
+.columnToggle * {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.contact a,
+.contact a:visited {
+  color: var(--color-white);
+  text-decoration: none;
+}

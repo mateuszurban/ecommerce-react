@@ -1,0 +1,88 @@
+body {
+  --font-size-default: 16px;
+  --font-family-default: "Montserrat", Arial, sans-serif;
+
+  font-size: var(--font-size-default);
+  font-family: var(--font-family-default);
+  color: var(--color-text-default);
+
+  --color-text-default: #21211d;
+  --color-white: #f5f5dc;
+  /* --color-cream: #e7e7ce; */
+  --color-grey: #969687;
+
+  --color-theme-main: #606c38;
+  /* --color-theme-main: #5f8a1a; */
+  --color-theme-lighter: #788748;
+  --color-theme-darker: #283618;
+
+  --color-yellow: #a48910;
+  --color-yellow-hover: #b69c29;
+  --color-green: #13661a;
+  --color-green-hover: #188220;
+}
+
+a,
+a:visited {
+  color: var(--color-text-default);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* widths 480 or more */
+@media (min-width: 480px) {
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .bestsellersContainer,
+  .specialOffers {
+    display: flex;
+  }
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+}

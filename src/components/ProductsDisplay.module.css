@@ -1,0 +1,27 @@
+.productsDisplay {
+  padding: 1rem;
+  width: 100%;
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .productsDisplayContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .productsDisplayContainer * {
+    flex-wrap: wrap;
+    width: 40vw;
+  }
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+  .productsDisplayContainer * {
+    flex-wrap: wrap;
+    width: 30vw;
+  }
+}

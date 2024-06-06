@@ -1,0 +1,28 @@
+.faq h2 {
+  margin-bottom: 1rem;
+}
+
+.faq p {
+  margin-bottom: 1.5rem;
+  width: 90%;
+  border-top: solid 1px var(--color-grey);
+  padding-top: 0.5rem;
+}
+
+.content:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.columnToggle * {
+  width: 18px;
+  height: 18px;
+}
+
+h4 {
+  margin-right: auto;
+}

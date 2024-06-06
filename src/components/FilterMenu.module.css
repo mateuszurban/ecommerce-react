@@ -1,0 +1,39 @@
+.filterMenu {
+  padding: 1rem;
+  width: 100%;
+}
+
+.true {
+  display: block;
+}
+
+.false {
+  display: none;
+}
+
+.columnToggle * {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.filterMenuTitle {
+  display: flex;
+  align-items: center;
+}
+
+.filterMenuTitle h2 {
+  margin-right: auto;
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .filterMenu {
+    width: 15%;
+    align-self: flex-start;
+  }
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+}

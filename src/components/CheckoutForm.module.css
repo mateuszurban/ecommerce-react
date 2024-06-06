@@ -1,0 +1,16 @@
+.checkoutForm {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.checkoutForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid var(--color-theme-main);
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}

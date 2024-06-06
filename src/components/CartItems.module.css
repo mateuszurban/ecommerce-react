@@ -1,0 +1,30 @@
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.cartWrapper h2 {
+  padding: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.cartWrapper h3 {
+  font-weight: 500;
+  text-transform: none;
+  text-align: left;
+  font-size: 1rem;
+  margin-right: auto;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+  .cartWrapper {
+    max-width: 1000px;
+  }
+}

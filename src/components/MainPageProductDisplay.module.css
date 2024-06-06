@@ -1,0 +1,37 @@
+.productDisplay {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+h2 a:hover {
+  color: var(--color-theme-main);
+  text-decoration: underline;
+}
+
+.productDisplayPhoto {
+  width: 100%;
+}
+
+.productDisplayPhoto:hover {
+  opacity: 90%;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productInfo p {
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.productInfo button {
+  width: 8rem;
+}

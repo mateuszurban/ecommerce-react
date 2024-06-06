@@ -1,0 +1,19 @@
+.about {
+  padding: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .about img {
+    height: 20vw;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,50 @@
+.topMenu {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem 0 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.topMenu li:first-of-type {
+  margin-right: auto;
+}
+.mainLogo {
+  font-weight: 900;
+  font-family: "Vollkorn", serif;
+  font-size: 2rem;
+}
+
+.menuItems {
+  background-color: white;
+  padding: 0;
+  display: block;
+}
+
+.topMenu ul li {
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+
+.true {
+  display: block;
+}
+
+.false {
+  display: none;
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .topMenu svg {
+    display: none;
+  }
+  .topMenu svg:nth-child(1) {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+}

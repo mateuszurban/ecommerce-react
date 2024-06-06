@@ -1,0 +1,22 @@
+.productDescriptionLong {
+  margin-bottom: 2rem;
+
+  /* This prevents tabs contents to jump around so much. I am not sure this is the best idea, but I like it more than HARD JUMP on every tab description switch. */
+  min-height: 16rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.active {
+  color: var(--color-theme-main);
+  border-bottom: 2px solid var(--color-theme-main);
+}

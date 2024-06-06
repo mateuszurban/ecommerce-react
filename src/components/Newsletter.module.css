@@ -1,0 +1,36 @@
+.newsletter {
+  background-color: var(--color-theme-main);
+  color: white;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.newsletter input {
+  color: var(--color-text-default);
+  width: 100%;
+  height: 3rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+h2,
+p,
+input {
+  padding-bottom: 1rem;
+}
+
+/* widths 768 or more */
+@media (min-width: 768px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter form {
+    width: 50%;
+  }
+}
+
+/* widths 1080 or more */
+@media (min-width: 1080px) {
+}

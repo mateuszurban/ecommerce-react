@@ -1,0 +1,11 @@
+.breadcrumbs {
+  color: var(--color-grey);
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumbs a {
+  text-transform: capitalize;
+}
